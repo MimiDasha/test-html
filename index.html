@@ -1,0 +1,469 @@
+<!Dooctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Html</title>
+        <style>
+             @media screen and (min-width: 481px)
+            {
+            .grid-container {
+                display: grid;
+               grid-template-columns:  repeat(auto-fill, 400px); 
+               grid-template-rows: 555px;
+               grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-auto-columns: 1fr;
+                background-color: white;
+                padding: 10px;
+                justify-content: center;
+                
+            }}
+            .item1, .item2, .item3, .item4, .item5, .item6{
+                
+                border-radius: 30px;
+                padding: 10px;
+            }
+
+             @media only screen
+/*   and (min-device-width: 320px) */ 
+  and (max-device-width: 400px){
+            
+            
+                .grid-container {
+                display: inline-block;
+                grid-template-columns:  repeat(auto-fill, 400px); 
+               grid-template-rows: 555px;
+               grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-auto-columns: 1fr;
+                background-color: white;
+                padding: 10px;
+                justify-content: center;
+            } }
+
+            
+
+           body {
+               position: relative;
+               
+               color: #000;
+               min-width: 320px;
+               overflow-x: hidden;
+               height: 700vh;
+
+           } 
+           .grid-container > div {
+               background-color: white;
+               border: grey solid 2px;
+           }
+        .grid-container > div h6  {
+
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               color: grey;
+               
+               text-align: right;
+               margin-right: 10px;
+               
+
+        }
+
+        .grid-container > div h3  {
+               font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              
+              
+               margin-left: 10px;
+
+        }
+        .info h4 {
+
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           display:flex;
+           margin-right: 100px;
+           margin-left: 10px;
+           align-items: justify;
+           color: grey;
+
+          
+           
+          
+           overflow:hidden;
+           text-overflow:ellipsis;
+           display: -webkit-box;
+           -webkit-box-orient: vertical;
+           -webkit-line-clamp: 3;
+           line-height: 20px;
+           max-height: 60px;
+        }
+
+        .price  {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: bold;
+            font-size: 120%;
+              color: red;
+               margin-left: 10px;
+
+        }
+
+        
+
+        button.buy  {
+            background-color: green;
+            border-radius: 10px;
+            align-items: right;
+            display: flex;
+            position: absolute;
+            margin-right:290px;
+            margin-bottom: -55px;
+            transform: translate(290px, -55px);
+            
+        }
+       button {
+           height: 50; 
+           width: 80;
+           padding-top: 10px;
+           border: none;
+           display: block; 
+           margin-right: 10em;
+
+        }
+
+       img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+           
+        }
+       
+       .rating  {
+            
+            position: absolute;
+            margin-right: 240px;
+            margin-bottom: 40px;
+            transform: translate(240px, -40px);
+            
+            
+        }
+       .rating p {
+            display:inline-block;            
+             margin-top:0; margin-left:2px; 
+        }
+
+       
+
+        #opacity {
+            opacity: 30%;
+        }
+
+         #like1, #like2, #like3, #like4, #like5, #like6  {
+            position: absolute;
+            margin-right: 312px;
+            margin-bottom: 0px;
+            transform: translate(312px, -0px);
+            
+        }
+
+        #status {
+            position: absolute;
+            margin-left: 2px;
+            margin-top: -180px;
+            transform: translate(2px, -180px);
+        }
+        </style>
+    
+
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="image/po-1.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/best price.png" alt="" height="100">
+                    </div>
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like1">
+                            <img id="like1" src="image/heart.png" alt="" height="35px" onClick="document.getElementById('like1').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item2">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="image/po-2.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/sale.png" alt="" height="100">
+                    </div>
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like2">
+                            <img id="like2" src="image/heart.png" alt="" height="35px" onClick="document.getElementById('like2').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item3">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="image/po-3.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/hot price.png" alt="" height="100">
+                    </div>
+
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like3">
+                            <img id="like3" src="image/heart.png" alt="" height="35px" onClick="document.getElementById('like3').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item4">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://www.polar.ru/upload/medialibrary/1e9/po-1.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/best price.png" alt="" height="100">
+                    </div>
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like4">
+                            <img id="like4" src="image/heart.png" alt="" height="35px" onClick="document.getElementById('like4').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item5">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://www.polar.ru/upload/medialibrary/1e9/po-1.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/best price.png" alt="" height="100">
+                    </div>
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like5">
+                            <img id="like5" src="image/heart.png" alt="" height="35px" onClick="document.getElementById('like5').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item6">
+                <div class="product">
+
+                    <div clas="id">
+                        <h6>id3254</h6>
+                    </div>
+
+                    <div class="photo">
+                        <img src="https://www.polar.ru/upload/medialibrary/1e9/po-1.jpg" 
+                        alt=" " width="300">
+                    </div>
+
+                    <div class="status">
+                        <img id="status" src="image/best price.png" alt="" height="100">
+                    </div>
+
+                    <div class="info">
+                        <h3>Наименования товара</h3>
+
+                        <div class="rating">
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px"></p>
+                            <p><img src="image/star.png" alt="" height="20px" id="opacity"></p>
+                        </div>
+
+                        <div class="like6">
+                            <img id="like6" src="image/heart.png" alt="" height="35px"  onClick="document.getElementById('like6').src='image/hearton.png'" >
+                        </div>
+
+                        <h4>Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                            Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                                Пылесос фирмы polaris лучший выбор 2022 года. Это современнешие технологие и т.д.
+                        </h4>
+
+                        <div>
+                            <span class="price">1000<small>грн</small></span>
+                        </div>
+
+                        <button class="buy" >
+                            <img src="image/buy.png"
+                            alt="" width="auto" height="30" ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
